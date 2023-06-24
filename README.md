@@ -31,3 +31,9 @@
     </filters>
 </site>
 ```
+
+- create the `.env.production` file.
+- change the JS path to prefix the env `PUBLIC_URL`, otherwise Crafter won't find the JS file.
+This variable is used as the base for JS and assets paths in the built code.
+- When using vite the base path is changed in the `vite.config.js`, 
+with other tool you can use `%PUBLIC_URL%/manifest.json` in the `index.html` file
