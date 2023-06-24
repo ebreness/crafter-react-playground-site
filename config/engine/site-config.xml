@@ -21,4 +21,16 @@
 
 <site>
     <version>4.0.1</version>
+    <spa>
+        <enabled>true</enabled>
+        <viewName>/</viewName>
+    </spa>
+    <filters>
+        <filter>
+            <script>/scripts/filters/spa.groovy</script>
+            <mapping>
+                <include>/**</include>
+            </mapping>
+        </filter>
+    </filters>
 </site>
